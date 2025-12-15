@@ -3,7 +3,10 @@ body {
     padding: 0;
 
     color: white;
-    font-family: "Lucida Console", "Courier New", monospace;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: xx-large;
 }
 .conteiner {
     display: flex;
@@ -18,23 +21,18 @@ body {
     justify-content: center;
     align-items: center;
 
-    height: 10vh;
-    width: 15vh;
+    height: 35vh;
+    width: 50vh;
 
     border-radius: 25px;
     cursor: pointer;
     user-select: none;
 
-    transition: 
-        background-color 0.2s ease,
-        transform 0.1s ease,
-        box-shadow 0.1s ease;
-
-    box-shadow: 0 6px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 0 rgba(0, 0, 0, 0.3);
 }
 .box:active {
     transform: translateY(4px);
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3);
 }
 .smash {
     background-color: purple;
