@@ -7,13 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="conteiner">
+    <div class="conteiner" onclick="smashbt()">
         <div class="smash box">
             Smash
         </div>
-        <div class="crash box">
+        <div class="crash box" onclick="crashbt()">
             Crash
         </div>
     </div>
 </body>
 </html>
+<script>
+const smash = new Audio("audio/smash.mp3");
+const crash = new Audio("audio/crash.mp3");
+
+function smashbt() {
+    smash.currentTime = 0;
+    smash.play();
+}
+function crashbt() {
+    crash.currentTime = 0;
+    crash.play();
+}
+</script>
