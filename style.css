@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    color: white;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    gap: 20px;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 10vh;
+    width: 15vh;
+
+    border-radius: 25px;
+    cursor: pointer;
+    user-select: none;
+
+    transition: 
+        background-color 0.2s ease,
+        transform 0.1s ease,
+        box-shadow 0.1s ease;
+
+    box-shadow: 0 6px 0 rgba(0, 0, 0, 0.3);
+}
+.box:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+}
+.smash {
+    background-color: purple;
+}
+.smash:hover {
+    background-color: rgb(159, 6, 159);
+}
+.crash {
+    background-color: blue;
+}
+.crash:hover {
+    background-color: rgb(67, 67, 255);
+}
